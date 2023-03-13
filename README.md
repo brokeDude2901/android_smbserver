@@ -7,6 +7,7 @@ Use your Android into as SMB Server
 - Can directly run exe as administrator on it without problems
 # SMB Cons:
 - Very slow when transfering lots of small files
+- Slower than FTP (over wifi,my Note 8 FTP raw speed is 300mbps, SMB raw speed is 100mbps. Pure USB 3.1 cable over MTP is 250 megabyte/s !)
 
 ## Step 1: Setup Termux on your Android device
 Download and install the lastest APK release of Termux from https://github.com/termux/termux-app/releases
