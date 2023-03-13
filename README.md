@@ -5,11 +5,12 @@ Use your Android into as SMB Server
 - Free
 - Can mount as a native Windows Network Drive
 - Can directly run exe as administrator on it without problems
-# FTP Cons:
-- Maybe slower than FTP when transfering large file
+# SMB Cons:
+- Very slow when transfering lots of small files
 
 ## Step 1: Setup Termux on your Android device
 Download and install the lastest APK release of Termux from https://github.com/termux/termux-app/releases
+'Aquire Wakelock' and enable 'Keep Screen On' for faster performance
 ## Step 2: Setup SMB on Termux
 Based on this Reddit thread: https://www.reddit.com/r/termux/comments/qb9ybp/using_termux_as_samba_server/
 ### Install samba
