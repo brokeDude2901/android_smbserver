@@ -48,7 +48,7 @@ Install-Module -Name LoopbackAdapter -MinimumVersion 1.2.0.0
 ### Change '192.168.1.14' to your actual Android IP
 ```powershell
 . ./attachsmb.ps1
-Create-Host -Name androidsmb -Ip 10.254.0.1 -Dest 192.168.1.14 -Port 1139
+Create-Host -Name androidsmb -Ip 10.254.0.1 -Dest 192.168.1.14 -Port 4445
 ```
 ### Reboot, right click on This PC and Map Network Drive: \\androidsmb\internal, enter your Samba username and password
 ![image](https://user-images.githubusercontent.com/46110534/224823235-938b253d-fb55-4ed8-b926-5dcea077951d.png)
