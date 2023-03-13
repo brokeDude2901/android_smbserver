@@ -7,7 +7,7 @@ Use your Android into as SMB Server
 - Can directly run exe as administrator on it without problems
 # SMB Cons:
 - Very slow when transfering lots of small files
-- Slower than FTP (over wifi,my Note 8 FTP raw speed is 300mbps, SMB raw speed is 100mbps. Pure USB 3.1 cable over MTP is 250 megabyte/s !)
+- Slower than FTP
 
 ## Step 1: Setup Termux on your Android device
 Download and install the lastest APK release of Termux from https://github.com/termux/termux-app/releases
@@ -50,5 +50,11 @@ Install-Module -Name LoopbackAdapter -MinimumVersion 1.2.0.0
 . ./attachsmb.ps1
 Create-Host -Name androidsmb -Ip 10.254.0.1 -Dest 192.168.1.14 -Port 4445
 ```
-### Reboot, right click on This PC and Map Network Drive: \\androidsmb\internal, enter your Samba username and password
+### Reboot
+Right click on This PC and Map Network Drive: \\androidsmb\internal, enter your Samba username and password
 ![image](https://user-images.githubusercontent.com/46110534/224823235-938b253d-fb55-4ed8-b926-5dcea077951d.png)
+
+Check current version of SMB Client running on Windows
+![image](https://user-images.githubusercontent.com/46110534/224839468-bae8c9ac-2ff0-410c-b97a-5862f8e50869.png)
+
+
