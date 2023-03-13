@@ -38,6 +38,7 @@ smbpasswd -L -a samba
 ## Step 3: Setup loopback adapter on your Windows PC
 Based on this answer on StackOverFlow: https://unix.stackexchange.com/a/723747 (https://gist.github.com/Hashbrown777/081e57ff9673a1f457e1c3a71b55cfaf#file-attachsmb-ps1)
 ### Install LoopbackAdapter and download the script
+Open a new Terminal/Powershell as Admin
 ```powershell
 iwr 'https://gist.githubusercontent.com/Hashbrown777/081e57ff9673a1f457e1c3a71b55cfaf/raw/28dcd74be1281812e2ef17b1bd36c6b5db216ca3/attachsmb.ps1'  -OutFile attachsmb.ps1
 Install-Module -Name LoopbackAdapter -MinimumVersion 1.2.0.0
