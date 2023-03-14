@@ -3,11 +3,10 @@ Use your Android into as SMB Server
 
 # SMB Pros:
 - Free
-- Can mount as a native Windows Network Drive
+- Can mount as a native Windows Network Drive, support all file operations
 - Can directly run exe as administrator on it without problems
 # SMB Cons:
-- Very slow when transfering lots of small files
-- Slower than FTP
+- Chatty protocol, super slow over WiFi (10-15mb/s because WiFi is half duplex and high latency)
 
 ## Step 1: Setup Termux on your Android device
 Download and install the lastest APK release of Termux from https://github.com/termux/termux-app/releases
